@@ -19,3 +19,6 @@ DSCOVR PlasMAG yyyy data consists of human-readable text format ,with one 1-min 
  d18 to d28 used interpolate linear method. We stored all data in new csv ([data](https://drive.google.com/drive/folders/1ZfTCTzwVR_ocT4d2z7GFagyXZpgfqjZ8)).
 -  In,pre-processing, took the kp data from  [kp data](https://kp.gfz-potsdam.de/en/data#c222) for 2022 and 2021 this data has few missing data which are filled by interpolate liner method.
 -   Added 2 new columns in the existing dataset named kp_val, geoStorm_01.geoStorm_01 is based on kp_val if kp_val >= 5 then storm occurs else will not.
+## Model*
+- After pre-processing, to predict we applied neural network modeling to newly developed data.It is  specifically designed model  to predict a binary value for Kp.
+- In Regression ,Adam' optimizer was used to optimize and utilized the binary crossentropy as loss function .From predicted Binary value if it is 1(Storm will occurs),o(Storm Will not occur).
