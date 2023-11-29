@@ -8,3 +8,8 @@ The [data](https://drive.google.com/drive/folders/1ZfTCTzwVR_ocT4d2z7GFagyXZpgfq
 ## Data
 - The Link [data](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/) has datasets:
 DSCOVR PlasMAG yyyy data consists of human-readable text format ,with one 1-min measurement set per line.
+- The data file contains 54 columns -0 column -date and time, columns(1-3)->components of the magnetic field vector.columns(4-53)-ecah value corresponds to the flux in a particular range of energies.
+- The 0 values in data represents NAN .We coverted 0 to NAN .
+- For Kp values we took data from [kp data](https://kp.gfz-potsdam.de/en/data#c222) for solar strom prediction.
+## pre-processing
+- 
