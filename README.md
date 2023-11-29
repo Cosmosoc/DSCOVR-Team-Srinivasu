@@ -12,4 +12,10 @@ DSCOVR PlasMAG yyyy data consists of human-readable text format ,with one 1-min 
 - The 0 values in data represents NAN .We coverted 0 to NAN .
 - For Kp values we took data from [kp data](https://kp.gfz-potsdam.de/en/data#c222) for solar strom prediction.
 ## pre-processing
-- 
+- From given raw data,we took 2022 and 2021 data .
+- Dataset of 2022:We dropped d29 to d49 columns with have more then 50% nan values and for x, y, z, d0 t0 d22 used KNNImputer to predict the nan values for d23 to d28 used interpolate linear method.
+- Dataset of 2021:We dropped d29 to d49 columns with have more then 50% nan values
+ and for x, y, z, d0 t0 d17 used KNNImputer to predict the nan values for
+ d18 to d28 used interpolate linear method. We stored all data in new csv ([data](https://drive.google.com/drive/folders/1ZfTCTzwVR_ocT4d2z7GFagyXZpgfqjZ8)).
+-  In,pre-processing, took the kp data from  [kp data](https://kp.gfz-potsdam.de/en/data#c222) for 2022 and 2021 this data has few missing data which are filled by interpolate liner method.
+-   Added 2 new columns in the existing dataset named kp_val, geoStorm_01.geoStorm_01 is based on kp_val if kp_val >= 5 then storm occurs else will not.
