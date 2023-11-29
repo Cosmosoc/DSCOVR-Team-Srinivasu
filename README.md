@@ -6,5 +6,5 @@ The [data](https://drive.google.com/drive/folders/1ZfTCTzwVR_ocT4d2z7GFagyXZpgfq
 ## Idea
 - We took a variety of international data sources (such as NASA, NOAA magnetic observatory in Japan and German Research Centre for Geosciences) as dataset for the model we used, to predict geomagnetic storms. we actually derived the storms binary classification (i.e., true/false) column from kpa values(if kpa>5.5 geostorm: true else kpa<5.5 geostorm:false).
 ## Data
-- The data set from link [data](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/) consists of dataset:
+- The Link [data](https://www.spaceappschallenge.org/develop-the-oracle-of-dscovr-experimental-data-repository/) has datasets:
 DSCOVR PlasMAG yyyy data consists of human-readable text format ,with one 1-min measurement set per line.
