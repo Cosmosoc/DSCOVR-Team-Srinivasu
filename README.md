@@ -20,6 +20,8 @@ DSCOVR PlasMAG yyyy data consists of human-readable text format ,with one 1-min 
 -  In,pre-processing, took the kp data from  [kp data](https://kp.gfz-potsdam.de/en/data#c222) for 2022 and 2021 this data has few missing data which are filled by interpolate liner method.
 -   Added  new columns in the existing dataset named kp_val, geoStorm_01.
 ## Model
-- After pre-processing, to predict we applied LSTM.It is  specifically designed model  to predict a value for Kp.
-- In more detailed,First LSTM layer with 25 neurons and 'relu' activation, Second LSTM layer with 15 neurons,Third LSTM layer with 10 neurons,TimeDistributed Dense layer with 1 neuron and 'relu' activation.
+- After pre-processing, the final model used to predict is by LSTM. It is model designed to predict a value for Kp.
+- We made multiple models by changing the number of neurons and layers.
+- The best one is till now has, First LSTM layer with 25 neurons and 'relu' activation, Second LSTM layer with 15 neurons, Third LSTM layer with 10 neurons, TimeDistributed Dense layer with 1 neuron and 'relu' activation.
 -Adam's optimizer was used to optimize and utilized the mse as loss function.
+- 3 models have been uploded named m_numberOfNeuronsInFirstLayer_numberOfEpochs (ex m_30_150 is model obtained from using model with fisrt layer having 30 neurons and trained for 150 epochs)
