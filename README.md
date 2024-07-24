@@ -24,4 +24,4 @@ DSCOVR PlasMAG yyyy data consists of human-readable text format ,with one 1-min 
 - We made multiple models by changing the number of neurons and layers.
 - The best one is till now has, First LSTM layer with 25 neurons and 'relu' activation, Second LSTM layer with 15 neurons, Third LSTM layer with 10 neurons, TimeDistributed Dense layer with 1 neuron and 'relu' activation.
 -Adam's optimizer was used to optimize and utilized the mse as loss function.
-- 3 models have been uploded named m_numberOfNeuronsInFirstLayer_numberOfEpochs (ex m_30_150 is model obtained from using model with fisrt layer having 30 neurons and trained for 150 epochs)
+- 3 models have been uploded named m_numberOfNeuronsInFirstLayer_numberOfEpochs (ex m_30_150 is model obtained from using model with fisrt layer having 30 neurons and trained for 150 epochs).
